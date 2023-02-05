@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after
+{
+    box-sizing: border-box;
+}
+
+:root
+{
+    --color-text: #cfcfcf;
+    --color-text-alt: #ffffff;
+    --color-background: #34303b;
+    --color-background-alt: #453f50;
+
+    --container-max-width: 1200px;
+}
+
+html,
+body
+{
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    background-color: var( --color-background );
+    color: var( --color-text );
+}
+
+.container
+{
+    max-width: var( --container-max-width );
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+a
+{
+    color: var( --color-text-alt );
+    font-weight: 600;
+}
+
+.site-navbar
+{
+    background-color: var( --color-background-alt );
+}
+
+.site-navbar .container
+{
+    display: flex;
+    padding: 0;
+    max-width: calc( var( --container-max-width ) + 1rem );
+}
+
+.site-navbar a
+{
+    padding: 1rem 1.3rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: var( --color-text );
+}
+
+.site-navbar a.current
+{
+    font-weight: 600;
+}
+
+.site-navbar a.current,
+.site-navbar a:hover
+{
+    color: var( --color-text-alt );
+}
+
+main a
+{
+    text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
+}
+
+.site-footer
+{
+    font-size: 0.7rem;
+    font-family: monospace;
+    /*letter-spacing: 2px;*/
+    text-transform: uppercase;
+}
+
+.site-footer a
+{
+    color: var( --color-text );
+    text-decoration: none;
+}
+
+.site-footer a:hover
+{
+    text-decoration: underline;
+}
